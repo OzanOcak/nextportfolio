@@ -38,7 +38,7 @@ export default function RootLayout({
         >
           <Navbar />
           <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between bg-black">
-            <div className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
+            <div className=" xl:inline-flex w-32 h-full fixed left-0 bottom-0">
               <LeftSide />
             </div>
             <div className="h-[88vh] w-[80%] mx-auto p-4">{children}</div>
