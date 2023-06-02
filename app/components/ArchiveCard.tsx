@@ -12,7 +12,7 @@ function ArchiveCard({ title, desc, listItems, link }: Props) {
   return (
     <a href="" target="_blank">
       <div
-        className="w-full h-80 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 
+        className="w-full h-60 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 
     hover:-translate-y-2 transition-transform duration-300 group"
       >
         <div className="flex justify-between items-center">
@@ -28,9 +28,14 @@ function ArchiveCard({ title, desc, listItems, link }: Props) {
           </h2>
           <p className="text-sm mt-3">{desc}</p>
         </div>
-        <ul className="text-xs md:text-sm text-gray-500 flex items-center gap-2 justify-between flex-wrap">
+        <ul
+          className="text-xs md:text-sm text-gray-500 flex items-end gap-2 justify-end 
+        flex-wrap"
+        >
           {listItems.map((item, i) => (
-            <li key={i}>{item}</li>
+            <li key={i} className="border border-green-500 px-1 rounded-md">
+              {item}
+            </li>
           ))}
         </ul>
       </div>

@@ -7,14 +7,14 @@ function Contact() {
     >
       <p
         className="font-titleFont text-lg text-green-500 font-semibold 
-      flex justify-center items-center tracking-wide"
+      flex  items-center tracking-wide"
       >
         What is next?
       </p>
-      <h2 className="flex justify-center font-titleFont text-5xl font-semibold">
+      <h2 className="flex  font-titleFont text-3xl font-semibold">
         Get in Touch
       </h2>
-      <p className="max-w-[600px text-center text-gray-700]">
+      <p className="max-w-[600px]  text-white">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error
         harum nam ad libero ratione, neque expedita debitis ut reiciendis nobis!
         Ipsa eum facilis quam eligendi odit officia non hic.

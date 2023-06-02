@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Archive() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div className="max-w-[100%] mx-auto py-10 lg-py-24 px-4">
+    <div className="max-w-[88%] md:max-w-[80%] mx-auto py-10 lg-py-24 px-4">
       <div className="w-full flex flex-col items-center">
         <h2 className="text-3xl font-titleFont font-semibold">
           Other Noteworthy Projects

@@ -34,15 +34,17 @@ export default function RootLayout({
       <body className={inter.className}>
         <div
           className="w-full h-screen font-bodyFont bg-black text-white 
-    overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-gray-700/20 scrollbar-thumb-gray-500/60"
+    overflow-x-hidden no-scrollbar overflow-y-scroll md:scrollbar scrollbar-track-gray-700/20 scrollbar-thumb-gray-500/60"
         >
           <Navbar />
           <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between bg-black">
-            <div className=" xl:inline-flex w-32 h-full fixed left-0 bottom-0">
+            <div className=" xl:inline-flex w-12 md:w-32 h-full fixed left-0 bottom-0">
               <LeftSide />
             </div>
-            <div className="h-[88vh] w-[80%] mx-auto p-4">{children}</div>
-            <div className="hidden xl:inline-flex w-32 fixed right-0 bottom-0">
+            <div className="h-[88vh] w-[94%] md:w-[80%] mx-auto p-4">
+              {children}
+            </div>
+            <div className="hidden md:inline-flex w-32 fixed right-0 bottom-0">
               <RightSide />
             </div>
           </div>

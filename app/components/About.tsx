@@ -7,7 +7,7 @@ function About() {
   return (
     <section
       id="about"
-      className="max-w-[100%]  md:max-w-[80%] mx-auto py-10 md:py-24 flex flex-col gap-4 lg:gap-8 md:px-10 xl:px-4"
+      className="max-w-[88%] md:max-w-[80%] mx-auto py-10 md:py-24 flex flex-col gap-4 lg:gap-8 md:px-10 xl:px-4"
     >
       <SectionTitle title="About Me" />
       <div className="flex flex-col lg:flex-row gap-16">
