@@ -71,7 +71,7 @@ function About() {
                 className="rounded-lg h-full object-cover"
               />
               <div
-                className="hidden lg:inline-block absolute w-full h-80 bg-green-700/20 rounded-md
+                className="hidden lg:inline-block absolute w-[14.5rem] h-[22rem] bg-green-700/20 rounded-md
               top-0 left-0 group-hover:bg-transparent duration-300"
               ></div>
             </div>
