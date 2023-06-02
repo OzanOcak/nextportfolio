@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div
           className="w-full h-screen font-bodyFont bg-black text-white 
-    overflow-x-hidden overflow-y-scroll"
+    overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-gray-700/20 scrollbar-thumb-gray-500/60"
         >
           <Navbar />
           <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between bg-black">

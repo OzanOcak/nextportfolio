@@ -1,12 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import logo from "../../public/logo.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 function Navbar() {
+  const ref = useRef<string | any>("");
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({ behavior: "smooth" });
+    const links = document.querySelectorAll(".nav-link");
+    links.forEach((link) => {
+      link.classList.remove("active");
+    });
+    e.currentTarget.classList.add("acrive");
+  };
   return (
     <div
       className="w-full shadow-[4rem] h-20 lg:h-[12vh] sticky top-0 z-50
@@ -25,7 +38,7 @@ function Navbar() {
         </motion.div>
         <div className="hidden md:inline-flex items-center gap-5">
           <ul className="flex text-[1rem] gap-5 py-1">
-            <Link href="#home">
+            <Link href="#home" onClick={handleScroll}>
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -35,7 +48,7 @@ function Navbar() {
                 Home
               </motion.li>
             </Link>
-            <Link href="#about">
+            <Link href="#about" onClick={handleScroll}>
               <motion.li
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -45,7 +58,7 @@ function Navbar() {
                 About <span></span>
               </motion.li>
             </Link>
-            <Link href="#projects">
+            <Link href="#projects" onClick={handleScroll}>
               <motion.li
                 initial={{ y: -30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -55,7 +68,7 @@ function Navbar() {
                 Projects
               </motion.li>
             </Link>
-            <Link href="#blogs">
+            <Link href="#blogs" onClick={handleScroll}>
               <motion.li
                 initial={{ y: -40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -65,7 +78,7 @@ function Navbar() {
                 Blogs
               </motion.li>
             </Link>
-            <Link href="#contact">
+            <Link href="#contact" onClick={handleScroll}>
               <motion.li
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
