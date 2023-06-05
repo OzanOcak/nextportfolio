@@ -1,5 +1,7 @@
 "use client";
 import { FiGithub } from "react-icons/fi";
+import { BsLinkedin } from "react-icons/bs";
+import { SiMicrodotblog, SiCodesandbox } from "react-icons/si";
 import { motion } from "framer-motion";
 
 function LeftSide() {
@@ -19,28 +21,28 @@ function LeftSide() {
             <FiGithub />
           </span>
         </a>
-        <a href="https://github.com/OzanOcak" target="_blank">
+        <a href="https://codesandbox.io/u/OzanOcak" target="_blank">
           <span
             className="w-10 h-10 text-xl bg-gray-800 rounded-full inline-flex items-center
           justify-center hover:text-green-500 cursor-point hover:-translate-y-2 transition-all duration-300"
           >
-            <FiGithub />
+            <SiCodesandbox />
           </span>
         </a>
-        <a href="https://github.com/OzanOcak" target="_blank">
+        <a href="https://www.linkedin.com/in/ozanocak/" target="_blank">
           <span
             className="w-10 h-10 text-xl bg-gray-800 rounded-full inline-flex items-center
           justify-center hover:text-green-500 cursor-point hover:-translate-y-2 transition-all duration-300"
           >
-            <FiGithub />
+            <BsLinkedin />
           </span>
         </a>
-        <a href="https://github.com/OzanOcak" target="_blank">
+        <a href="https://ozanocak.github.io/" target="_blank">
           <span
             className="w-10 h-10 text-xl bg-gray-800 rounded-full inline-flex items-center
           justify-center hover:text-green-500 cursor-point hover:-translate-y-2 transition-all duration-300"
           >
-            <FiGithub />
+            <SiMicrodotblog />
           </span>
         </a>
       </div>

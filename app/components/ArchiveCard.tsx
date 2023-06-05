@@ -10,7 +10,7 @@ interface Props {
 
 function ArchiveCard({ title, desc, listItems, link }: Props) {
   return (
-    <a href="" target="_blank">
+    <a href="projects" target="_blank">
       <div
         className="w-full h-60 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 
     hover:-translate-y-2 transition-transform duration-300 group"
